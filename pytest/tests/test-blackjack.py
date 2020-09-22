@@ -1,0 +1,8 @@
+import pytest 
+
+from blackjack.common import card_score
+
+
+@pytest.mark.parametrize("cards,score", [('JK', 20), ('KKK', 0), ('AA', 12), ('AK', 21)])
+def test_simple_usecase(cards, score):
+    assert card_score(cards) == score
