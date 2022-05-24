@@ -141,23 +141,24 @@ python-versions = ">=3.6"
 
 [[package]]
 name = "httpie"
-version = "2.6.0"
-description = "HTTPie: command-line HTTP client for the API era."
+version = "3.1.0"
+description = "HTTPie: modern, user-friendly command-line HTTP client for the API era."
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 charset-normalizer = ">=2.0.0"
 colorama = {version = ">=0.2.4", markers = "sys_platform == \"win32\""}
 defusedxml = ">=0.6.0"
+multidict = ">=4.7.0"
 Pygments = ">=2.5.2"
 requests = {version = ">=2.22.0", extras = ["socks"]}
 requests-toolbelt = ">=0.9.1"
 
 [package.extras]
-dev = ["pytest", "pytest-httpbin (>=0.0.6)", "responses", "flake8", "flake8-comprehensions", "flake8-deprecated", "flake8-mutable", "flake8-tuple", "pyopenssl", "pytest-cov", "pyyaml", "twine", "wheel", "jinja2"]
-test = ["pytest", "pytest-httpbin (>=0.0.6)", "responses"]
+dev = ["jinja2", "flake8", "flake8-comprehensions", "flake8-deprecated", "flake8-mutable", "flake8-tuple", "pyopenssl", "pytest", "pytest-cov", "pytest-httpbin (>=0.0.6)", "pytest-lazy-fixture (>=0.0.6)", "pyyaml", "responses", "twine", "wheel"]
+test = ["pytest", "pytest-httpbin (>=0.0.6)", "pytest-lazy-fixture (>=0.0.6)", "responses"]
 
 [[package]]
 name = "idna"
@@ -417,7 +418,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "121b87fb857e03aa3fbf8c8a41de885ff4e37957e7f8ea91a92ccd0093f38baa"
+content-hash = "c5027a551df2ea9ff46fa8b55e48b409c2c37591beac47e57717d86e0c75dd96"
 
 [metadata.files]
 aiohttp = [
@@ -612,8 +613,8 @@ frozenlist = [
     {file = "frozenlist-1.2.0.tar.gz", hash = "sha256:68201be60ac56aff972dc18085800b6ee07973c49103a8aba669dee3d71079de"},
 ]
 httpie = [
-    {file = "httpie-2.6.0-py3-none-any.whl", hash = "sha256:58fe1b845b4015a04b0dfc172b6f85c0960cebedc44cee09c9146291692083d7"},
-    {file = "httpie-2.6.0.tar.gz", hash = "sha256:ef929317b239bbf0a5bb7159b4c5d2edbfc55f8a0bcf9cd24ce597daec2afca5"},
+    {file = "httpie-3.1.0-py3-none-any.whl", hash = "sha256:5e8d5d3cacee73cc3e60bba3be0b837010032d624e29ea92617b204ba6a676fb"},
+    {file = "httpie-3.1.0.tar.gz", hash = "sha256:2e4a2040b84a912e65c01fb34f7aafe88cad2a3af2da8c685ca65080f376feda"},
 ]
 idna = [
     {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},
